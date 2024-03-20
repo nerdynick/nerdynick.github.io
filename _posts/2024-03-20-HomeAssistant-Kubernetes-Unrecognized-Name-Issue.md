@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Exposing Kubernetes Services with DNS External using CoreDNS
+title:  Unrecognized Name issues with HomeAssistant
 date:   2024-03-20 11:00:00 -0600
 categories: kubernetes k3s k8s iot homelab self-hosted homeassistant has tls ssl https dns
 ---
