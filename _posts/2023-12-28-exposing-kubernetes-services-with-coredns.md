@@ -31,19 +31,19 @@ What this all means is that for many of these projects, they will accept a DNS e
 Resulting in the k8s_gateway being ineffective at the goal I was attempting to solve.
 However, the framework was already there to do what was needed and a simple [PR](https://github.com/ori-edge/k8s_gateway/pull/170) later and the support for ExternalDNS' annotations was added.
 
-# The Deployment
+## The Deployment
 
 Now for what you most likely came here for, the deployment itself.
 I've broken it up into 2 parts, but everything here can be put into one `kubectl` deployment.
 
-## Part 1: Create our Service Account and RBAC Permissions
+### Part 1: Create our Service Account and RBAC Permissions
 
 Since we will be leveraging the Kube APIs. 
 We will need to allow access to the respective needed APIs to poll the information needed to find services and lookup their tags.
 
 {% gist 5718e7b706b7990c2cbc76881690a8c8 coredns_permissions.yml%}
 
-## Part 2: Create the Deployment and Service
+### Part 2: Create the Deployment and Service
 
 {% gist 5718e7b706b7990c2cbc76881690a8c8 coredns.yml%}
 
