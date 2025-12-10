@@ -25,7 +25,7 @@ tags:
     - dns
 categories:
     - HomeLab
-    
+    - HASS
 ---
 
 Recently I ran into an issue while trying to create a new instance of HomeAssistant on a K3s install of Kubernetes. 
@@ -40,6 +40,12 @@ That was until I came across a [Kubernetes StackOverflow Question](https://stack
 In the above-mentioned StackOverflow question, the user noted that if he added the final `.`, ex `https://example.com` vs `https://example.com.`, to the addresses would actually allow the connection to work as expected. 
 This led me to test with some simple `CURL` commands to see if I was facing the same issue, see below for those simple tests.
 Now that I had verified that I was getting the same issue, I could move on to the fix.
+
+> [!NOTE]
+> Update/Edit: Awhile after working through this issue, I ultimately did eventually find the culprit for the whole thing. 
+> I had configured DHCP with search domains. I found the root issue while attempting to setup another smaller K3s cluster.
+> In Unifi, this is simple called the "Domain Name" within the Network Configuration. 
+> Providing no value here, ultimately did resolve the issue. 
 
 ### Verifying the Issue
 
