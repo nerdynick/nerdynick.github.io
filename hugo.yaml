@@ -1,0 +1,38 @@
+baseURL: https://nerdynick.com/
+languageCode: en-us
+title: NerdyNik
+pagination:
+  pagerSize: 5
+permalinks:
+  post: /:sectionslug/:year/:month/:slug/
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+        title: true
+caches:
+  images:
+    dir: :cacheDir/images
+params:
+  header_image: img/twin-lake-res.jpg
+  featured_tags: true
+  last_posts: true
+  # about_me: true
+  SEOTitle: NerdyNick | My Random Collection of Writeup, Notes, Findings, and Muzings
+  slogan: My Random Collection of Writeup, Notes, Findings, and Muzings
+  # sidebar_avatar:
+  sidebar_about_description: Distributed Systems Architect, BigData Platform Architect, DevOps Engineer, and General HomeLab Hobbiest
+  headerstyle: text
+  social:
+    rss: true
+    linkedin: https://www.linkedin.com/in/nikoletav/
+    github: https://github.com/nerdynick/
+  additional_menus:
+    - title: Archive
+      href: "/archive/"
+    # - title: About
+    #   href: "/about/"
+theme: hugo-theme-cleanwhite

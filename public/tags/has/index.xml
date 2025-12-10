@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Has on NerdyNik</title>
+    <link>http://localhost:1313/tags/has/</link>
+    <description>Recent content in Has on NerdyNik</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Mar 2024 11:00:00 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/has/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unrecognized Name issues with HomeAssistant</title>
+      <link>http://localhost:1313/posts/2024/03/unrecognized-name-issues-with-homeassistant/</link>
+      <pubDate>Wed, 20 Mar 2024 11:00:00 -0600</pubDate>
+      <guid>http://localhost:1313/posts/2024/03/unrecognized-name-issues-with-homeassistant/</guid>
+      <description>&lt;p&gt;Recently I ran into an issue while trying to create a new instance of HomeAssistant on a K3s install of Kubernetes.&#xA;Getting HomeAssistant up and running and connected to an MQTT server within the same cluster worked as expected.&#xA;However, the issue came up when I attempted to get it to connect to NabuCasa or make connections out to any TLS/SSL (HTTPS) addresses.&#xA;Viewing the HomeAssistant logs from the &lt;code&gt;Settings-&amp;gt;System-&amp;gt;Logs&lt;/code&gt; area, I noticed I was getting a very vague error of &lt;code&gt;tlsv1 unrecognized name&lt;/code&gt;.&#xA;Searching around the internet for the issue affecting HomeAssistant just kept turning up people having issues with DNS but no actual &amp;ldquo;What the DNS issue was&amp;rdquo;.&#xA;That was until I came across a &lt;a href=&#34;https://stackoverflow.com/questions/66630929/kubenetes-pod-curl-works-only-if-domain-name-ends-with&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kubernetes StackOverflow Question&lt;/a&gt; where the person was getting the same issue but with a completely different application.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
